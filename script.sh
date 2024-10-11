@@ -44,25 +44,12 @@ flatpak install flathub com.github.hluk.copyq
 
 # adding config files for i3 
 sleep $TIME_FOR_SLEEP
-echo "Will add the directory for i3 and clone config into it"
-mkdir ~/.config/i3
-cd ~/.config/i3
-git clone https://github.com/yurabulany/i3-window-manager.git
-
-# adding config files for dunst 
-echo "Will add the directory for dunst and clone config into it"
-mkdir ~/.config/dunst
-cd ~/.config/dunst
-git clone https://github.com/yurabulany/Dunst-config.git
-
-# adding config files for picom 
-echo "Will add the directory for picom and clone config into it"
-mkdir ~/.config/picom
-cd ~/.config/picom
-git clone https://github.com/yurabulany/Picom.git
-
-# adding config files for gxkb 
-echo "Will add the directory for gxkb and clone config into it"
-mkdir ~/.config/gxkb
-cd ~/.config/gxkb
+echo "Will add config files"
+cd ~/.config
+git clone https://github.com/yurabulany/i3.git
 git clone https://github.com/yurabulany/gxkb.git
+git clone https://github.com/yurabulany/picom.git
+git clone https://github.com/yurabulany/dunst.git
+
+
+
