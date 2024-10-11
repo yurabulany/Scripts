@@ -35,12 +35,12 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 #install flatpak apps
 sleep $TIME_FOR_SLEEP
 echo "Will install flatpak apps now"
-flatpak install flathub org.telegram.desktop
-flatpak install flathub org.onlyoffice.desktopeditors
-flatpak install flathub com.github.johnfactotum.Foliate
-flatpak install flathub com.viber.Viber
-flatpak install flathub io.github.shiftey.Desktop
-flatpak install flathub com.github.hluk.copyq
+flatpak install -y flathub org.telegram.desktop
+flatpak install -y flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub com.github.johnfactotum.Foliate
+flatpak install -y flathub com.viber.Viber
+flatpak install -y flathub io.github.shiftey.Desktop
+flatpak install -y flathub com.github.hluk.copyq
 
 # adding config files for i3 
 sleep $TIME_FOR_SLEEP
