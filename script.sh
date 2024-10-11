@@ -5,7 +5,7 @@
 TIME_FOR_SLEEP = 2
 
 # update packages list
-sudo dnf update
+sudo dnf update -y
 
 # array with the packages needed to install
 packages=(wget git neofetch htop mpv neovim vifm steam firefox thunderbird i3 redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop flameshot)
