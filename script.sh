@@ -12,7 +12,7 @@ packages=(wget git neofetch htop mpv vim neovim vifm steam firefox thunderbird i
 
 # command to install the packages from the array above
 echo "Will now install some apps"
-sudo dnf install -y "${packages[@]}"
+sudo dnf install -y ${packages[@]}
 
 # installing codecs
 echo "Will install codecs now"
@@ -30,7 +30,7 @@ sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 # add flatpak repo
 echo "Will add flatpak repo now"
 sleep $TIME_FOR_SLEEP
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #install flatpak apps
 sleep $TIME_FOR_SLEEP
