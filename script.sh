@@ -6,7 +6,7 @@
 sudo dnf update -y
 
 # array with the packages needed to install
-packages=(wget git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable)
+packages=(wget git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable python ripgrep)
 
 # command to install the packages from the array above
 sudo dnf install -y ${packages[@]}
@@ -51,5 +51,9 @@ chsh -s /usr/bin/fish
 curl -L https://get.oh-my.fish | fish
 sudo dnf install -y powerline-fonts
 omf install bobthefish
+
+## lazygit section
+sudo dnf copr enable atim/lazygit -y
+sudo dnf install -y lazygit
 
 reboot
