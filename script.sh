@@ -6,7 +6,7 @@
 sudo dnf update -y
 
 # array with the packages needed to install
-packages=(wget alacritty git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable python ripgrep)
+packages=(wget alacritty git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable python ripgrep adobe-source-code-pro-fonts)
 
 # command to install the packages from the array above
 sudo dnf install -y ${packages[@]}
