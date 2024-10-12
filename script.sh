@@ -6,7 +6,7 @@
 sudo dnf update -y
 
 # array with the packages needed to install
-packages=(wget git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable python ripgrep)
+packages=(wget alacritty git neofetch htop mpv vim neovim vifm fzf steam firefox thunderbird i3 i3lock redshift gxkb picom feh nitrogen dunst fish calibre transmission polybar zathura arandr j4-dmenu-desktop tmux flameshot darktable python ripgrep)
 
 # command to install the packages from the array above
 sudo dnf install -y ${packages[@]}
@@ -41,6 +41,7 @@ git clone https://github.com/yurabulany/vifm.git
 git clone https://github.com/yurabulany/fish.git
 git clone https://github.com/yurabulany/tmux.git
 git clone https://github.com/yurabulany/mpv.git
+git clone https://github.com/yurabulany/alacritty.git
 
 ## fish section
 # make fish the default shell
@@ -54,6 +55,6 @@ omf install bobthefish
 
 ## lazygit section
 sudo dnf copr enable atim/lazygit -y
-sudo dnf install -y lazygit
+sudo dnf install lazygit
 
 reboot
