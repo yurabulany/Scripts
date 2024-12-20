@@ -65,7 +65,7 @@ sudo dnf copr enable atim/lazygit -y
 sudo dnf install lazygit
 
 # tlp section
-sudo dnf install tlp
+sudo dnf install tlp -y
 ## for fedora 41 and newer 
 sudo dnf remove tuned tuned-ppd
 sudo systemctl enable tlp.service
@@ -73,8 +73,5 @@ sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 ## set the charge treshold
 sudo tlp setcharge BAT0 1
 
-
-
-
-
-reboot
+# reboot the computer after the install
+sudo reboot
