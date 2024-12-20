@@ -53,7 +53,7 @@ git clone https://github.com/yurabulany/kmonad.git
 ## fish section
 # make fish the default shell
 sudo dnf install -y util-linux-user
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 
 # adding powerline to fish
 curl -L https://get.oh-my.fish | fish
@@ -61,17 +61,20 @@ sudo dnf install -y powerline-fonts
 omf install bobthefish
 
 ## lazygit section
-sudo dnf copr enable atim/lazygit -y
-sudo dnf install lazygit
+sudo dnf copr enable -y atim/lazygit 
+sudo dnf install -y lazygit
 
 # tlp section
-sudo dnf install tlp -y
-## for fedora 41 and newer 
-sudo dnf remove tuned tuned-ppd
+sudo dnf install -y tlp 
+sudo dnf remove tuned tuned-ppd ## for fedora 41 and newer 
 sudo systemctl enable tlp.service
 sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 ## set the charge treshold
 sudo tlp setcharge BAT0 1
+
+# port proton section
+sudo dnf copr enable -y boria138/portproton
+sudo dnf install -y portproton
 
 # reboot the computer after the install
 sudo reboot
