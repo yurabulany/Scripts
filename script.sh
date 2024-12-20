@@ -47,6 +47,8 @@ git clone https://github.com/yurabulany/fish.git
 git clone https://github.com/yurabulany/tmux.git
 git clone https://github.com/yurabulany/mpv.git
 git clone https://github.com/yurabulany/alacritty.git
+git clone https://github.com/yurabulany/nvim.git
+git clone https://github.com/yurabulany/kmonad.git
 
 ## fish section
 # make fish the default shell
@@ -61,5 +63,18 @@ omf install bobthefish
 ## lazygit section
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install lazygit
+
+# tlp section
+sudo dnf install tlp
+## for fedora 41 and newer 
+sudo dnf remove tuned tuned-ppd
+sudo systemctl enable tlp.service
+sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
+## set the charge treshold
+sudo tlp setcharge BAT0 1
+
+
+
+
 
 reboot
